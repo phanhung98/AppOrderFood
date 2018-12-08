@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg"
+    tools:context=".Activitys.SignIn">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/edtPass"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/logofood" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="216dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="12345"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtPass"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="256dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="123"
+        android:textColor="@android:color/white" />
+
+    <com.rey.material.widget.CheckBox
+        android:id="@+id/ckbRemember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Material.Drawable.CheckBox"
+        android:gravity="center_vertical"
+        app:cbd_strokeColor="@android:color/white"
+        android:textColor="@android:color/white"
+        android:layout_alignStart="@+id/edtPass"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-5dp"
+        android:layout_marginBottom="175dp" />
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="290dp"
+        android:layout_height="163dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/memberlg" />
+
+</RelativeLayout>
